@@ -1,0 +1,44 @@
+PyTorch 2.11.0+rocm7.2_lumi_aif_20260929120822 HIP 7.2.53211 GPU AMD Instinct MI250X
+blocked_per_source__baseline__s42 epoch=1 val=0.524090 seconds=3.9
+blocked_per_source__baseline__s42 epoch=2 val=0.504753 seconds=0.2
+blocked_per_source__baseline__s42 classification/canonical/s42 epoch=1 score=-0.12500
+blocked_per_source__baseline__s42 classification/canonical/s42 epoch=2 score=-0.12500
+blocked_per_source__baseline__s42 classification/pose/s42 epoch=1 score=-0.15625
+blocked_per_source__baseline__s42 classification/pose/s42 epoch=2 score=-0.15625
+blocked_per_source__baseline__s42 rotation/canonical/s42 epoch=1 score=80.90986
+blocked_per_source__baseline__s42 rotation/canonical/s42 epoch=2 score=99.07618
+blocked_per_source__baseline__s42 rotation/pose/s42 epoch=1 score=87.49087
+blocked_per_source__baseline__s42 rotation/pose/s42 epoch=2 score=93.93059
+PyTorch 2.11.0+rocm7.2_lumi_aif_20260929120822 HIP 7.2.53211 GPU AMD Instinct MI250X
+blocked_per_source__block_skew__s42 epoch=1 val=0.384776 seconds=2.6
+blocked_per_source__block_skew__s42 epoch=2 val=0.372227 seconds=0.2
+blocked_per_source__block_skew__s42 classification/canonical/s42 epoch=1 score=-0.06250
+blocked_per_source__block_skew__s42 classification/canonical/s42 epoch=2 score=-0.06250
+blocked_per_source__block_skew__s42 classification/pose/s42 epoch=1 score=-0.15625
+blocked_per_source__block_skew__s42 classification/pose/s42 epoch=2 score=-0.15625
+blocked_per_source__block_skew__s42 rotation/canonical/s42 epoch=1 score=80.93785
+blocked_per_source__block_skew__s42 rotation/canonical/s42 epoch=2 score=99.07375
+blocked_per_source__block_skew__s42 rotation/pose/s42 epoch=1 score=86.39707
+blocked_per_source__block_skew__s42 rotation/pose/s42 epoch=2 score=94.62421
+PyTorch 2.11.0+rocm7.2_lumi_aif_20260929120822 HIP 7.2.53211 GPU AMD Instinct MI250X
+blocked_per_source__dense_circle__s42 epoch=1 val=0.415748 seconds=2.8
+blocked_per_source__dense_circle__s42 epoch=2 val=0.398701 seconds=0.2
+blocked_per_source__dense_circle__s42 classification/canonical/s42 epoch=1 score=-0.14062
+blocked_per_source__dense_circle__s42 classification/canonical/s42 epoch=2 score=-0.14062
+blocked_per_source__dense_circle__s42 classification/pose/s42 epoch=1 score=-0.09375
+blocked_per_source__dense_circle__s42 classification/pose/s42 epoch=2 score=-0.09375
+blocked_per_source__dense_circle__s42 rotation/canonical/s42 epoch=1 score=80.90626
+blocked_per_source__dense_circle__s42 rotation/canonical/s42 epoch=2 score=99.05424
+blocked_per_source__dense_circle__s42 rotation/pose/s42 epoch=1 score=90.78057
+blocked_per_source__dense_circle__s42 rotation/pose/s42 epoch=2 score=93.48056
+PyTorch 2.11.0+rocm7.2_lumi_aif_20260929120822 HIP 7.2.53211 GPU AMD Instinct MI250X
+blocked_per_source__block_skew_circle__s42 epoch=1 val=0.525700 seconds=2.6
+blocked_per_source__block_skew_circle__s42 epoch=2 val=0.503695 seconds=0.1
+blocked_per_source__block_skew_circle__s42 classification/canonical/s42 epoch=1 score=-0.14062
+blocked_per_source__block_skew_circle__s42 classification/canonical/s42 epoch=2 score=-0.14062
+blocked_per_source__block_skew_circle__s42 classification/pose/s42 epoch=1 score=-0.09375
+blocked_per_source__block_skew_circle__s42 classification/pose/s42 epoch=2 score=-0.09375
+blocked_per_source__block_skew_circle__s42 rotation/canonical/s42 epoch=1 score=80.91158
+blocked_per_source__block_skew_circle__s42 rotation/canonical/s42 epoch=2 score=99.07851
+blocked_per_source__block_skew_circle__s42 rotation/pose/s42 epoch=1 score=90.78161
+blocked_per_source__block_skew_circle__s42 rotation/pose/s42 epoch=2 score=93.48369

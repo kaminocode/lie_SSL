@@ -1,0 +1,34 @@
+wandb: Tracking run with wandb version 0.30.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/unblocked__block_skew_circle__s42/probes/classification/pose/seed_42/wandb/offline-run-20261017_053334-68nua36n
+wandb: View this run in the terminal with `wandb leet`
+wandb: 
+wandb: Run history:
+wandb:             epoch ▁▁▁▁▂▂▃▃▃▃▃▃▃▃▄▄▄▅▅▅▅▅▅▅▅▆▆▆▆▆▆▇▇▇▇▇▇███
+wandb: test/digit_0/top1 ▁
+wandb: test/digit_0/top5 ▁
+wandb: test/digit_1/top1 ▁
+wandb: test/digit_1/top5 ▁
+wandb: test/digit_2/top1 ▁
+wandb: test/digit_2/top5 ▁
+wandb: test/digit_3/top1 ▁
+wandb: test/digit_3/top5 ▁
+wandb: test/digit_4/top1 ▁
+wandb:               +23 ...
+wandb: 
+wandb: Run summary:
+wandb:             epoch 100
+wandb: test/digit_0/top1 0.2551
+wandb: test/digit_0/top5 0.53878
+wandb: test/digit_1/top1 0.57621
+wandb: test/digit_1/top5 1
+wandb: test/digit_2/top1 0
+wandb: test/digit_2/top5 0.52132
+wandb: test/digit_3/top1 0.22673
+wandb: test/digit_3/top5 0.59604
+wandb: test/digit_4/top1 0
+wandb:               +23 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/unblocked__block_skew_circle__s42/probes/classification/pose/seed_42/wandb/offline-run-20261017_053334-68nua36n
+wandb: Find logs at: /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/unblocked__block_skew_circle__s42/probes/classification/pose/seed_42/wandb/offline-run-20261017_053334-68nua36n/logs

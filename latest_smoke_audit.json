@@ -1,0 +1,22 @@
+{
+  "root": "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/smoke_20261016T113406Z_audit_g",
+  "original_smoke_root": "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/smoke_20261016T113406Z",
+  "job_id": "22903495",
+  "command": [
+    "sbatch",
+    "--parsable",
+    "--account=project_465003463",
+    "--partition=dev-g",
+    "--gpus-per-task=1",
+    "--cpus-per-task=8",
+    "--mem=60G",
+    "--time=00:05:00",
+    "--job-name=lie_audit_gpu",
+    "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/smoke_20261016T113406Z/audit_gpu_%j.out",
+    "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/smoke_20261016T113406Z/audit_gpu_%j.err",
+    "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/smoke_20261016T113406Z/source/slurm/aggregate.sh",
+    "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/smoke_20261016T113406Z_audit_g",
+    "smoke"
+  ],
+  "reason": "CPU audit pending without estimated start; independent report directory avoids concurrent writes"
+}

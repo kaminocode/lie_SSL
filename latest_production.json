@@ -1,0 +1,174 @@
+{
+  "root": "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z",
+  "partition": "standard-g",
+  "workers_per_node": 8,
+  "maximum_active_nodes": 1,
+  "jobs": [
+    {
+      "stage": "train",
+      "job_id": "22907296",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_std_train",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/train_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/train_%A_%a.err",
+        "--time=05:00:00",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z/full_node.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z",
+        "train",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z",
+        "/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "job_id": "22907297",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_std_evaluate",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/evaluate_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/evaluate_%A_%a.err",
+        "--time=01:00:00",
+        "--dependency=afterok:22907296",
+        "--kill-on-invalid-dep=yes",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z/full_node.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z",
+        "evaluate",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z",
+        "/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard"
+      ]
+    },
+    {
+      "stage": "probe",
+      "job_id": "22907298",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_std_probe",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/probe_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/probe_%A_%a.err",
+        "--array=0-19%1",
+        "--time=24:00:00",
+        "--dependency=afterok:22907297",
+        "--kill-on-invalid-dep=yes",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z/full_node.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z",
+        "probe",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z",
+        "/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard"
+      ]
+    },
+    {
+      "stage": "aggregate",
+      "job_id": "22907299",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_std_aggregate",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/aggregate_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/standard/aggregate_%A_%a.err",
+        "--dependency=afterok:22907298",
+        "--kill-on-invalid-dep=yes",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z/aggregate.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z"
+      ]
+    }
+  ],
+  "previous_jobs": [
+    {
+      "stage": "train",
+      "job_id": "22903514",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_train",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/train_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/train_%A_%a.err",
+        "--array=0-7%4",
+        "--time=24:00:00",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source/slurm/job.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z",
+        "train"
+      ]
+    },
+    {
+      "stage": "evaluate",
+      "job_id": "22903515",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_evaluate",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/evaluate_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/evaluate_%A_%a.err",
+        "--array=0-7%4",
+        "--time=01:00:00",
+        "--dependency=afterok:22903514",
+        "--kill-on-invalid-dep=yes",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source/slurm/job.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z",
+        "evaluate"
+      ]
+    },
+    {
+      "stage": "probe",
+      "job_id": "22903516",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_probe",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/probe_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/probe_%A_%a.err",
+        "--array=0-159%4",
+        "--time=24:00:00",
+        "--dependency=afterok:22903515",
+        "--kill-on-invalid-dep=yes",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source/slurm/job.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z",
+        "probe"
+      ]
+    },
+    {
+      "stage": "aggregate",
+      "job_id": "22903518",
+      "command": [
+        "sbatch",
+        "--parsable",
+        "--account=project_465003463",
+        "--job-name=lie_aggregate",
+        "--chdir=/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+        "--output=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/aggregate_%A_%a.out",
+        "--error=/pfs/lustrep4/scratch/project_465003463/rahul/lie_SSL/logs/production_20261016T114017Z/aggregate_%A_%a.err",
+        "--dependency=afterok:22903516",
+        "--kill-on-invalid-dep=yes",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source/slurm/aggregate.sh",
+        "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z"
+      ]
+    }
+  ],
+  "launcher_snapshot": "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/launch_standard_20261016T122357Z",
+  "scientific_source_snapshot": "/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/source",
+  "scheduler_updates": [
+    {
+      "job_id": "22907296",
+      "stage": "train",
+      "time_limit": "05:00:00",
+      "updated_utc": "2026-10-16T12:26:23.520604Z"
+    }
+  ]
+}

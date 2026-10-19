@@ -1,0 +1,26 @@
+{
+  "lie_ssl/reference_model.py": {
+    "source": "/scratch/project_465003463/rahul/unsupervised_g_iclr_2026_my_implementation/experiments_1_rotated_mnist_lie_method/blocked_mnist_per_source/experiment/model.py",
+    "sha256": "72e5e54dc93c0b6ef0f6fe4f1c5c5e5f81583c6020c783da815743be1d492c48"
+  },
+  "lie_ssl/reference_config.py": {
+    "source": "/scratch/project_465003463/rahul/unsupervised_g_iclr_2026_my_implementation/experiments_1_rotated_mnist_lie_method/blocked_mnist_per_source/experiment/config.py",
+    "sha256": "46cfb157a6bf2e2e29a1d4fcf1c589d9deaca844200579efddc6c0fcd033de1b"
+  },
+  "lie_ssl/data.py": {
+    "source": "/scratch/project_465003463/rahul/unsupervised_g_iclr_2026_my_implementation/experiments_1_rotated_mnist_lie_method/blocked_mnist_per_source/experiment/data.py",
+    "sha256": "0741a47e474e8eafcf648d43b5027f88616b6909edbebc0e8e633bbbcbdd3993"
+  },
+  "lie_ssl/utils.py": {
+    "source": "/scratch/project_465003463/rahul/unsupervised_g_iclr_2026_my_implementation/experiments_1_rotated_mnist_lie_method/blocked_mnist_per_source/experiment/utils.py",
+    "sha256": "958cf110d00e390572525ef8cdb5a8b079799232970c9741e981603c8face910"
+  },
+  "lie_ssl/losses.py": {
+    "source": "/scratch/project_465003463/rahul/unsupervised_g_iclr_2026_my_implementation/experiments_1_rotated_mnist_lie_method/blocked_mnist_per_source/experiment/losses.py",
+    "sha256": "071d8a5c8e2c3d6f07bee8db800f42c3ef975926d6a4d28633120059bcfd4a26"
+  },
+  "lie_ssl/image_metrics.py": {
+    "source": "/scratch/project_465003463/rahul/unsupervised_g_iclr_2026_my_implementation/experiments_1_2_blocked_mnist/lga_mnist/metrics.py",
+    "sha256": "6b64a2dc4ef955abadf4bfe1a928eefee1eea43b054310819147e9d8f5252658"
+  }
+}

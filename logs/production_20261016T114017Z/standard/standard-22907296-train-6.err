@@ -1,0 +1,34 @@
+wandb: Tracking run with wandb version 0.30.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/blocked_per_source__dense_circle__s42/wandb/offline-run-20261016_153326-379tg2xn
+wandb: View this run in the terminal with `wandb leet`
+wandb: 
+wandb: Run history:
+wandb:              epoch ▁▁▁▁▁▂▂▂▂▂▂▃▃▃▃▃▃▄▄▄▄▄▄▅▅▅▅▅▆▆▆▆▇▇▇▇▇███
+wandb:            seconds ▂▂▄▄▃▃▂▁▂▁▄▄▆▆▁▅█▄▂▄▂▆▂▅▄▂█▅▂▅▃▂▄▇▂▂▁▃▁▂
+wandb:          train/can ▇▂▂▂▂▆▅█▄▂▃▄▃▁▃▁▁▁▂▃▂▂▂▂▂▂▂▂▄▂▂▂▂▂▂▂▅▂▂▂
+wandb: train/common_total █▆▄▄▄▃▃▃▃▃▃▃▃▂▃▂▂▂▃▂▂▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁
+wandb:          train/obs █▅▅▄▄▄▄▃▃▃▃▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▂▁▁▁▁▁▁▂▁▁
+wandb:         train/swap █▆▅▅▄▄▄▄▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁
+wandb:        train/total █▇▆▆▅▅▅▅▆▅▄▄▄▃▃▃▃▃▃▃▃▃▂▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁
+wandb:            val/can ▅▃▃▂▂▆█▅▃▄▃▃▃▂▂▁▁▁▁▄▂▃▂▃▂▂▃▄▂▂▂▂▂▂▃▂▂▃▂▃
+wandb:   val/common_total █▇▇▅▆▆▄▄▄▄▄▄▃▄▄▃▃▄▄▃▃▃▃▂▂▃▂▂▂▂▂▂▂▂▂▂▁▂▁▁
+wandb:            val/obs █▃▃▃▂▂▂▂▂▂▂▂▂▂▂▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                 +2 ...
+wandb: 
+wandb: Run summary:
+wandb:              epoch 300
+wandb:            seconds 9.88324
+wandb:          train/can 0.00116
+wandb: train/common_total 0.03923
+wandb:          train/obs 0.01265
+wandb:         train/swap 0.02542
+wandb:        train/total 0.03923
+wandb:            val/can 0.00112
+wandb:   val/common_total 0.03725
+wandb:            val/obs 0.01172
+wandb:                 +2 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/blocked_per_source__dense_circle__s42/wandb/offline-run-20261016_153326-379tg2xn
+wandb: Find logs at: /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/blocked_per_source__dense_circle__s42/wandb/offline-run-20261016_153326-379tg2xn/logs

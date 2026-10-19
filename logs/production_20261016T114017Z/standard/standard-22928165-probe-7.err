@@ -1,0 +1,34 @@
+wandb: Tracking run with wandb version 0.30.0
+wandb: W&B syncing is set to `offline` in this directory. Run `wandb online` or set WANDB_MODE=online to enable cloud syncing.
+wandb: Run data is saved locally in /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/blocked_per_source__block_skew_circle__s42/probes/rotation/canonical/seed_43/wandb/offline-run-20261017_100743-c33i9lhf
+wandb: View this run in the terminal with `wandb leet`
+wandb: 
+wandb: Run history:
+wandb:                        epoch ▁▁▁▁▁▂▂▂▂▂▃▃▃▃▃▃▃▄▄▄▄▄▅▅▅▅▅▅▅▆▆▆▆▇▇▇▇▇▇█
+wandb:             test/digit_0/mae ▁
+wandb:          test/digit_0/median ▁
+wandb:            test/digit_0/rmse ▁
+wandb:     test/digit_0/rotation_r2 ▁
+wandb: test/digit_0/rotation_r2_cos ▁
+wandb: test/digit_0/rotation_r2_sin ▁
+wandb:       test/digit_0/within_10 ▁
+wandb:       test/digit_0/within_30 ▁
+wandb:        test/digit_0/within_5 ▁
+wandb:                         +114 ...
+wandb: 
+wandb: Run summary:
+wandb:                        epoch 100
+wandb:             test/digit_0/mae 7.85517
+wandb:          test/digit_0/median 4.77568
+wandb:            test/digit_0/rmse 17.30657
+wandb:     test/digit_0/rotation_r2 0.9349
+wandb: test/digit_0/rotation_r2_cos 0.94416
+wandb: test/digit_0/rotation_r2_sin 0.92565
+wandb:       test/digit_0/within_10 0.80306
+wandb:       test/digit_0/within_30 0.97551
+wandb:        test/digit_0/within_5 0.51888
+wandb:                         +114 ...
+wandb: 
+wandb: You can sync this run to the cloud by running:
+wandb: wandb sync /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/blocked_per_source__block_skew_circle__s42/probes/rotation/canonical/seed_43/wandb/offline-run-20261017_100743-c33i9lhf
+wandb: Find logs at: /pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/production_20261016T114017Z/blocked_per_source__block_skew_circle__s42/probes/rotation/canonical/seed_43/wandb/offline-run-20261017_100743-c33i9lhf/logs

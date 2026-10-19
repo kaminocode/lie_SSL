@@ -1,0 +1,36 @@
+The following modules were not unloaded:
+  (Use "module --force purge" to unload all):
+
+  1) ModuleLabel/label   2) lumi-tools/26.06   3) init-lumi/0.3
+
+The following sticky modules could not be reloaded:
+
+  1) lumi-tools
+test_baseline_reference_outputs_gradients (test_contracts.Contracts.test_baseline_reference_outputs_gradients) ... FAIL
+test_blocks_periodic_orthogonal (test_contracts.Contracts.test_blocks_periodic_orthogonal) ... ok
+test_circle_range_seam_and_zero (test_contracts.Contracts.test_circle_range_seam_and_zero) ... ok
+test_export_recompute (test_contracts.Contracts.test_export_recompute) ... ok
+test_r2_and_wrap (test_contracts.Contracts.test_r2_and_wrap) ... ok
+test_resume_contract_and_optimizer (test_contracts.Contracts.test_resume_contract_and_optimizer) ... ok
+test_variants_finite_gradients_and_norms (test_contracts.Contracts.test_variants_finite_gradients_and_norms) ... ok
+
+======================================================================
+FAIL: test_baseline_reference_outputs_gradients (test_contracts.Contracts.test_baseline_reference_outputs_gradients)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/pfs/lustrep4/scratch/project_465003463/checkpoints/baburaja/lie_SSL/smoke_20261016T113152Z/source/tests/test_contracts.py", line 42, in test_baseline_reference_outputs_gradients
+    torch.testing.assert_close(a.grad,b.grad,rtol=0,atol=0)
+  File "/opt/venv/lib/python3.12/site-packages/torch/testing/_comparison.py", line 1600, in assert_close
+    raise error_metas[0].to_error(msg)
+AssertionError: Tensor-likes are not equal!
+
+Mismatched elements: 224 / 288 (77.8%)
+Greatest absolute difference: 2.7284841053187847e-12 at index (1, 0, 0, 1)
+Greatest relative difference: 0.00014685007045045495 at index (25, 0, 2, 0)
+
+----------------------------------------------------------------------
+Ran 7 tests in 18.946s
+
+FAILED (failures=1)
+srun: error: nid005005: task 0: Exited with exit code 1
+srun: Terminating StepId=22903323.0

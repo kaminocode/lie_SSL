@@ -1,0 +1,3 @@
+stage=evaluate group=0 rank=5 index=5
+GPU binding: {'SLURM_PROCID': '5', 'ROCR_VISIBLE_DEVICES': '0', 'HIP_VISIBLE_DEVICES': None}
+PyTorch 2.11.0+rocm7.2_lumi_aif_20260929120822 HIP 7.2.53211 GPU AMD Instinct MI250X
